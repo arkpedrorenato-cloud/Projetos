@@ -1,0 +1,53 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+	<center>
+
+    <h2>Envie uma mensagem preenchendo o formulário abaixo</h2>
+	
+	<br>
+
+    <form action="gozalo.php" method="post">
+
+        <label for="nome">Seu Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+
+        <br>
+
+        <label for="telefone">Seu Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone">
+
+        <br>
+
+        <label for="email">Seu E-Mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
+
+        <br><br>
+
+        <label>Deseja receber nossas novidades?<br></label>
+
+        <input type="radio" id="novidades" name="novidades" value="sim" checked>
+        <label for="sim">Sim</label>
+		<input type="radio" id="novidades" name="novidades" value="nao" checked>
+        <label for="nao">Não</label>
+
+        <br><br>
+
+        <label for="mensagem">Sua mensagem: <br></label>
+        <textarea id="mensagem" name="mensagem" placeholder="Mensagem*" required></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+	
+	</center>
+
+</body>
+</html>
